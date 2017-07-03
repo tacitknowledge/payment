@@ -242,8 +242,7 @@ var payment =
 	    re = /(?:^|\s)(\d{4})$/;
 	  }
 	  if (re.test(value)) {
-	    e.preventDefault();
-	    QJ.val(target, value + ' ' + digit);
+	    QJ.val(target, value + ' ');
 	    return QJ.trigger(target, 'change');
 	  }
 	};
@@ -265,9 +264,8 @@ var payment =
 	    e.preventDefault();
 	    QJ.val(target, value.replace(/\d\s$/, ''));
 	    return QJ.trigger(target, 'change');
-	  } else if (/\s\d?$/.test(value)) {
-	    e.preventDefault();
-	    QJ.val(target, value.replace(/\s\d?$/, ''));
+	  } else if (/\s\d$/.test(value)) {
+	    QJ.val(target, value.replace(/\d?$/, ''));
 	    return QJ.trigger(target, 'change');
 	  }
 	};
