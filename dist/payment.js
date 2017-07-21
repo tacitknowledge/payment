@@ -104,7 +104,7 @@ var payment =
 	    luhn: true
 	  }, {
 	    type: 'mastercard',
-	    pattern: /^(5[1-5]|677189)|^(222[1-9]|2[3-6]\d{2}|27[0-1]\d|2720)/,
+	    pattern: /^(5[1-5])|^(222[1-9]|2[3-6]\d{2}|270[0-9]|271[0-9]|2720)/,
 	    format: defaultFormat,
 	    length: [16],
 	    cvcLength: [3],
