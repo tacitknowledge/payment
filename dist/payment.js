@@ -97,7 +97,7 @@ var payment =
 	    luhn: true
 	  }, {
 	    type: 'maestro',
-	    pattern: /^(5018|5020|5038|6304|6703|6708|6759|676[1-3])/,
+	    pattern: /^(50|5[6-8]|6)/,
 	    format: defaultFormat,
 	    length: [12, 13, 14, 15, 16, 17, 18, 19],
 	    cvcLength: [3],
